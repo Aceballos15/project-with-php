@@ -1,5 +1,3 @@
-#iniciar second commit 
-
 <?php
 include('navbar_index.php'); 
 include('Administrador/config/conect.php'); 
