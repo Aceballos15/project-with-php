@@ -7,7 +7,10 @@ $db_password= $_ENV['DB_PASSWORD'];
 
 $dsn = 'mysql:dbname='.$db_name.';host='.$db_host.';'
 
-    $conexion = new PDO($dsn, $db_user, $db_password);
-    // echo "conexion establecida";
+
+        $conexion = new PDO($dsn, $db_user, $db_password);
+        // echo "conexion establecida";
+
+    
 ?> 
  
