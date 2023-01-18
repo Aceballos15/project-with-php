@@ -1,3 +1,6 @@
+<?php 
+session_start(); 
+?> 
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -41,22 +44,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7">
-                        <?php
-                            session_start(); 
-                            if(isset($_SESSION['id']) and (isset($_SESSION['name']))){
-                            ?>
-                                <div class="header__top__links">
-                            
-                                    <a href="#" >
-                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                                        <?php echo $_SESSION['name']; ?> 
-                                    </a>
-                                </div>
-                            <?php
-                            }else {
-                                echo ""; 
-                            }
-                        ?>
                     </div>
                          
                     <div class="col-lg-6 col-md-5">
