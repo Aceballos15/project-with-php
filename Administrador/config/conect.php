@@ -5,7 +5,7 @@ $db_host= $_ENV['DB_HOST'];
 $db_user= $_ENV['DB_USER'];
 $db_password= $_ENV['DB_PASSWORD'];
 
-$dsn = 'mysql:dbname='.$db_name.';host='.$db_host;
+$dsn = 'mysql:dbname='.$db_name.';host='.$db_host.';'
 $usuario = $db_user;
 $contraseña = $db_password;
 try {
