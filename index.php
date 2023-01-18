@@ -1,8 +1,8 @@
 #iniciar second commit 
 
 <?php
-include('navbar.php'); 
-include('../Administrador/config/conect.php'); 
+include('navbar_index.php'); 
+include('Administrador/config/conect.php'); 
 ?>
 <section class="hero">
         <div class="hero__slider owl-carousel">
@@ -14,7 +14,7 @@ include('../Administrador/config/conect.php');
                                 <h6>Categoría</h6>
                                 <h2>HOGAR Y TECNOLOGÍA</h2>
                                 <p style="color: black;"><b> Aquí encontrarás toda clase de aparatos tecnológicos y productos para el hogar. </b></p>
-                                <a href="./shop.php" class="primary-btn"> Explorar <span class="arrow_right"></span></a>
+                                <a href="Usuario/shop.php" class="primary-btn"> Explorar <span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -33,7 +33,7 @@ include('../Administrador/config/conect.php');
                                 <h6>Categoría</h6>
                                 <h2>MODA, ESTILO Y DISEÑO</h2>
                                 <p>Encontrás toda clase de prendas masculinas y femeninas, para todas las edades.</p>
-                                <a href="./shop.php" class="primary-btn">Explorar<span class="arrow_right"></span></a>
+                                <a href="Usuario/shop.php" class="primary-btn">Explorar<span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -69,8 +69,8 @@ $resultado= $query->fetchAll(PDO::FETCH_ASSOC);
                 <?php foreach($resultado as $result): ?>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                    <a href="xdetails/shop-details.php?id_product=<?php echo $result['idProductos']; ?>">
-                        <div class="product__item__pic set-bg" data-setbg="../Administrador/img/productos/<?php echo $result['imagen']; ?>">
+                    <a href="Usuario/xdetails/shop-details.php?id_product=<?php echo $result['idProductos']; ?>">
+                        <div class="product__item__pic set-bg" data-setbg="Administrador/img/productos/<?php echo $result['imagen']; ?>">
                         <span class="label">New</span>
                         </div>
                 </a>
@@ -134,7 +134,7 @@ $resultado= $query->fetchAll(PDO::FETCH_ASSOC);
                     <div class="blog__item">
                         <div class="blog__item__pic set-bg" data-setbg="src/img/empresas/<?php echo $result['imagen']; ?>"></div>
                         <div class="blog__item__text">
-                            <span><img src="src/img/icon/calendar.png" alt=""> 6 de octubre de 2022</span>
+                            <span><img src="Usuario/src/img/icon/calendar.png" alt=""> 6 de octubre de 2022</span>
                             <h5><?php echo $result['nombre_empresa']; ?></h5>
                           
                         </div>
@@ -157,16 +157,16 @@ include('footer.php');
         </div>
     </div>
 
-    <script src="src/js/jquery-3.3.1.min.js"></script>
-    <script src="src/js/bootstrap.min.js"></script>
-    <script src="src/js/jquery.nice-select.min.js"></script>
-    <script src="src/js/jquery.nicescroll.min.js"></script>
-    <script src="src/js/jquery.magnific-popup.min.js"></script>
-    <script src="src/js/jquery.countdown.min.js"></script>
-    <script src="src/js/jquery.slicknav.js"></script>
-    <script src="src/js/mixitup.min.js"></script>
-    <script src="src/js/owl.carousel.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <script src="Usuario/src/js/jquery-3.3.1.min.js"></script>
+    <script src="Usuario/src/js/bootstrap.min.js"></script>
+    <script src="Usuario/src/js/jquery.nice-select.min.js"></script>
+    <script src="Usuario/src/js/jquery.nicescroll.min.js"></script>
+    <script src="Usuario/src/js/jquery.magnific-popup.min.js"></script>
+    <script src="Usuario/src/js/jquery.countdown.min.js"></script>
+    <script src="Usuario/src/js/jquery.slicknav.js"></script>
+    <script src="Usuario/src/js/mixitup.min.js"></script>
+    <script src="Usuario/src/js/owl.carousel.min.js"></script>
+    <script src="Usuario/src/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
